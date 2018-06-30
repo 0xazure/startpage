@@ -5,6 +5,9 @@ function handleSubmit() {
         bb: {
             url: 'https://my.senecacollege.ca'
         },
+        fb: {
+            url: 'https://facebook.com'
+        },
         g: {
             url: 'https://github.com',
             search_url: 'https://github.com/search?q='

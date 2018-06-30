@@ -44,13 +44,13 @@ function handleSubmit() {
         const searchTermParts = searchTerm.split(' ')
 
         if (shortcuts.hasOwnProperty(searchTermParts[0])) {
-           if (searchTermParts.length == 1) {
+            if (searchTermParts.length == 1) {
                 window.location.href = shortcuts[searchTermParts[0]].url
-           } else {
-               window.location.href = `${shortcuts[searchTermParts[0]].search_url}${encodeURIComponent(searchTermParts.slice(1).join(' '))}`
-           }
+            } else {
+                window.location.href = `${shortcuts[searchTermParts[0]].search_url}${encodeURIComponent(searchTermParts.slice(1).join(' '))}`
+            }
         } else {
-            window.location.href = `${shortcuts.google.search_url}${searchTermParts[0]}`
+            window.location.href = `${shortcuts.google.search_url}${encodeURIComponent(searchTerm)}`
         }
     }
 

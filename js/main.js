@@ -30,9 +30,6 @@ function handleSubmit() {
         re: {
             url: 'https://old.reddit.com'
         },
-        tb: {
-            url: 'https://tumblr.com'
-        },
         tw: {
             url: 'https://twitter.com'
         },
